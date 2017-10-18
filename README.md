@@ -8,7 +8,7 @@ volumes:
   mantis-db:
 services:
   mantis:
-    image: mikroways/mantis
+    image: mikroways/mantisbt
     environment:
       MANTIS_ENABLE_ADMIN: 1
       MANTIS_CONFIG: |

@@ -52,6 +52,8 @@ And point your browser at http://localhost:8080/admin/install.php
 
 Follow installation instructions, and you are done!
 
+The default administrator user is **administrator** / **root**
+
 ## Using the installed image
 
 Edit the configuration file provided above removing the following values:
@@ -63,3 +65,4 @@ Test your installatio` environment variable
 * Remove `g_show_detailed_errors` from `MANTIS_CONFIG` environment variable
 
 Test your installation. Enjoy!
+

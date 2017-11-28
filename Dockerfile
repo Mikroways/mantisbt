@@ -28,5 +28,6 @@ RUN set -xe \
     && echo 'date.timezone = "America/Argentina/Buenos_Aires"' > /usr/local/etc/php/php.ini
 
 ADD ./mantis-entrypoint /usr/local/bin/mantis-entrypoint
+ADD ./mantis-entrypoint-crontab /usr/local/bin/mantis-entrypoint-crontab
 
 CMD ["mantis-entrypoint"]

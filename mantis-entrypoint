@@ -5,11 +5,9 @@ echo '<?php ' > /var/www/html/config/config_inc.php
 echo -e $MANTIS_CONFIG >> /var/www/html/config/config_inc.php
 echo -e "\n?>" >> /var/www/html/config/config_inc.php
 
-test -d admin && chmod -rx admin
-mv admin .admin
+test -d admin && chmod -rx admin && mv admin .admin
 if [ ! -z "$MANTIS_ENABLE_ADMIN" ]; then
-  mv .admin admin
-  chmod +rx admin
+  test -d .admin && mv .admin admin && chmod +rx admin
 fi
 
 apache2-foreground
